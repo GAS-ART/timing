@@ -1,0 +1,438 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Gilroy";
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.wraper {
+  padding: 40px 0;
+}
+
+.planer__main-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container {
+  width: 960px;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-options {
+  padding: 0 0 10px 0;
+}
+.main-options__select {
+  display: flex;
+  flex-direction: row;
+}
+.main-options__total {
+  display: flex;
+  flex-direction: row;
+}
+
+.select__title {
+  margin-right: 10px;
+}
+.select__all {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.select__all + p {
+  margin-right: 10px;
+}
+.select__reset {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.total__title {
+  margin-right: 5px;
+}
+.total__quantity {
+  margin-right: 5px;
+  font-weight: 600;
+}
+.total__persent {
+  margin-right: 5px;
+}
+
+.maim-field {
+  border: 1px solid;
+  padding: 10px;
+  position: relative;
+}
+
+.hours__item {
+  min-width: 14px;
+}
+.hours__hours {
+  margin: 0 0 5px 0;
+  text-align: center;
+}
+
+.days__item {
+  display: flex;
+  flex-direction: row;
+}
+
+.days__days {
+  display: flex;
+  min-width: 40px;
+}
+
+table {
+  margin-left: -1px;
+  margin-top: -5px;
+  border-collapse: collapse;
+  display: block;
+}
+
+td {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
+
+.sign {
+  cursor: pointer;
+}
+
+.table-chekbox {
+  border: none;
+  text-align: center;
+}
+
+[data-color=green] {
+  background-color: green;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-field {
+  height: 40px;
+  width: 60%;
+  padding: 10px;
+  margin: 25px 0 0 0;
+  border: 2px solid #cecece;
+  background: #f6f6f6;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #000;
+}
+
+.submit {
+  margin: 10px 0 0 0px;
+  width: 90px;
+  height: 50px;
+  border-radius: 45%;
+  cursor: pointer;
+  background-color: midnightblue;
+  font-weight: 900;
+  font-size: 20px;
+  color: lightsalmon;
+  box-shadow: 0 5px 0 0 #29014b;
+  transition: all 0.4s ease 0s;
+}
+
+.submit:active {
+  margin: 33px 0 0 0;
+  box-shadow: 0 2px 0 0 #29014b;
+}
+
+.green {
+  background-color: green;
+}
+
+.open {
+  margin: 20px 0px;
+}
+
+.open-item {
+  padding: 10px;
+  border: 1px dashed #7123b6;
+  margin: 0 0 20px 0;
+}
+
+.apply {
+  height: 30px;
+  width: 79.5%;
+  background-color: #191970;
+  background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
+  text-transform: uppercase;
+  font-size: 18px;
+  color: honeydew;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.delete {
+  height: 30px;
+  width: 20%;
+  background: #f5ecf0;
+  background: radial-gradient(circle, #f5ecf0 0%, rgba(2, 6, 85, 0.9864320728) 100%);
+  text-transform: uppercase;
+  font-size: 18px;
+  color: maroon;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+[data-color=red] {
+  background-color: brown;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 440px;
+    padding: 0 10px;
+    min-height: 1280px;
+  }
+
+  .maim-field {
+    min-height: 1280px;
+  }
+
+  .hours__item {
+    margin: 0 0 -5px 0;
+    min-width: 27px;
+    justify-content: flex-end;
+  }
+
+  .days__week {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sign {
+    transform: rotate(90deg);
+  }
+
+  [data-color=green] {
+    transform: rotate(0deg);
+  }
+
+  .hours__item {
+    display: flex;
+    flex-direction: row;
+    transform: rotate(90deg);
+    justify-content: flex-end;
+  }
+
+  .hours__hours {
+    transform: rotateX(180deg);
+    margin: 0 2px 5px 0;
+  }
+
+  .hours__check {
+    transform: rotateX(180deg);
+    align-self: start;
+    max-height: 14px;
+    margin: 0 4px 0 0;
+  }
+
+  .days__item {
+    flex-direction: column;
+    transform: rotate(90deg);
+  }
+
+  .days__days {
+    display: flex;
+    justify-content: center;
+    transform: rotateX(180deg);
+    order: 2;
+  }
+
+  .days__check {
+    text-align: center;
+    transform: rotateX(180deg);
+    order: 1;
+  }
+
+  table {
+    margin-top: 425px;
+    transform: rotateX(180deg);
+    margin-left: -440px;
+  }
+
+  tbody {
+    transform: rotate(-90deg);
+  }
+
+  .open-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .apply {
+    margin: 0 0 15px 0;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .delete {
+    width: 25%;
+    font-size: 14px;
+  }
+
+  .text-field {
+    width: 100%;
+  }
+}
+@media (max-width: 440px) {
+  .container {
+    width: 360px;
+    min-height: 1060px;
+  }
+
+  .maim-field {
+    min-height: 1060px;
+  }
+
+  .hours__check {
+    max-height: 14px;
+    margin: 0 4px 0 0;
+  }
+
+  .hours__item {
+    margin: 25px 0 0 0;
+  }
+
+  td {
+    padding: 5px;
+  }
+
+  table {
+    margin-top: 350px;
+    margin-left: -360px;
+  }
+
+  .text-field {
+    width: 100%;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    width: 270px;
+    min-height: 790px;
+  }
+
+  .maim-field {
+    min-height: 790px;
+  }
+
+  td {
+    padding: 0px;
+  }
+
+  table {
+    margin-top: 250px;
+    margin-left: -280px;
+  }
+
+  .hours__item {
+    margin: 20px 0 5px 0;
+  }
+
+  .delete {
+    width: 40%;
+    font-size: 14px;
+  }
+
+  .text-field {
+    width: 100%;
+  }
+}
